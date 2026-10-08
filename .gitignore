@@ -1,0 +1,41 @@
+# ---------- Python ----------
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.egg-info/
+
+# ---------- Local Spark / Delta artifacts ----------
+spark-warehouse/
+metastore_db/
+derby.log
+*.crc
+_delta_log/
+
+# ---------- Databricks ----------
+# CLI / bundle local state
+.databricks/
+.bundle/
+databricks.yml.local
+
+# ---------- Secrets (NEVER commit these) ----------
+.env
+.env.*
+*.pem
+*.key
+.databrickscfg
+secrets.*
+
+# ---------- IDE / OS ----------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ---------- Data & outputs ----------
+*.parquet
+*.csv
+*.log
